@@ -40,38 +40,43 @@
             <main id="main">
                 <h1>Contact us!</h1>
                 <form method="post" action="contact.html" id="contactForm">
-                    <label for="firstname">First Name</label>
-                    <input type="text" id="firstname" name="firstname" placeholder="Enter your first name">
+                    <fieldset>
+                        <legend>Your information</legend>
+                        <label for="firstname">First Name</label>
+                        <input type="text" id="firstname" name="firstname" placeholder="Enter your first name">
 
-                    <label for="lastname">First Name</label>
-                    <input type="text" id="lastname" name="lastname" placeholder="Enter your last name">
+                        <label for="lastname">First Name</label>
+                        <input type="text" id="lastname" name="lastname" placeholder="Enter your last name">
 
-                    <label for="country">Country</label>
-                    <select id="country" name="country">
-                        <option value="uk">UK</option>
-                        <option value="greece">Greece</option>
-                        <option value="belgium">Belgium</option>
-                    </select>
+                        <label for="country">Country</label>
+                        <select id="country" name="country">
+                            <option value="uk">UK</option>
+                            <option value="greece">Greece</option>
+                            <option value="belgium">Belgium</option>
+                        </select>
 
-                    <label for="birthday">Birthday</label>
-                    <input type="date" id="birthday" name="birthday">
+                        <label for="birthday">Birthday</label>
+                        <input type="date" id="birthday" name="birthday">
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </fieldset>
 
-                    <label>I have a</label>
-                    <input type="radio" id="question" name="conctactReason" value="Question" checked>
-                    <label for="question">Question</label><br>
-                    <input type="radio" id="remark" name="conctactReason" value="Remark">
-                    <label for="remark">Remark</label><br>
-                    <input type="radio" id="complaint" name="conctactReason" value="Complaint">
-                    <label for="complaint">Complaint</label>
+                    <fieldset>
+                        <label>I have a</label>
+                        <input type="radio" id="question" name="conctactReason" value="Question" checked>
+                        <label for="question">Question</label><br>
+                        <input type="radio" id="remark" name="conctactReason" value="Remark">
+                        <label for="remark">Remark</label><br>
+                        <input type="radio" id="complaint" name="conctactReason" value="Complaint">
+                        <label for="complaint">Complaint</label>
 
-                    <label for="question">Your Question</label>
-                    <textarea id="question" name="question" placeholder="Write your question here"
-                        style="height:150px"></textarea>
+                        <label for="question">Your Question</label>
+                        <textarea id="question" name="question" placeholder="Write your question here"
+                            style="height:150px"></textarea>
 
-                    <input type="submit" value="Submut">
+                        <input type="submit" value="Submit">
+                    </fieldset>
                 </form>
             </main>
         </div>
