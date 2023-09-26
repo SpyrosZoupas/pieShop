@@ -73,3 +73,15 @@ footer {
     padding-top: 20px;
     padding-right: 50px;
 }
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.menu-logo {
+    width: 100px;
+    margin-right: 30px;
+}
