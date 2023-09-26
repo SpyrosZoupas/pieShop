@@ -8,6 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="favicon.png">
+    <script>
+        function save() {
+            localStorage.setItem("applepie", true);
+        }
+        
+        window.onload = function () {
+            var favourite = document.getElementById('favourite');
+            if (window.localStorage) {
+                var storage = window.localStorage;
+                if (storage.getItem('applepie') == 'true') {
+                    favourite.innerHTML = "Applie pie is one of your favourites";
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -47,7 +62,8 @@
                         </a>
                         <figcaption>Our world-famous apple pie</figcaption>
                     </figure>
-
+                    <button type="button" onclick="save()">Save as favourite</button>
+                    <span id="favourite"></span>
                     <div>
                         <strong>Price: $12.95</strong>
                         <h2>Description</h2>
