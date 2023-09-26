@@ -108,3 +108,29 @@ table, td, th {
     font-size: 1.1em;
     letter-spacing: 0.2rem;
 }
+
+.small-menu {
+    list-style-type: none;
+    list-style: none;
+    text-align: center;
+    padding: 0px;
+}
+
+.small-menu>li>a {
+    font-family: WorkSansRegular;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    color: #c87d52;
+}
+
+.aside-header {
+    text-align: center;
+    font-family: WorkSansBold;
+    text-transform: uppercase;
+}
+
+#left-menu>a>img {
+    width: 150px;
+    margin: auto;
+    display: block;
+}
